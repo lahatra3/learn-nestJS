@@ -1,5 +1,5 @@
 import { Body, Controller, Delete, Get, Param, Post, Put, Res } from '@nestjs/common';
-import { Membre } from './membre.entity';
+import { Membre } from 'src/output/entities/Membre';
 import { MembreService } from './membre.service';
 
 @Controller('membre')

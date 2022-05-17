@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { MembreService } from './membre.service';
-import { Membre } from './membre.entity';
 import { MembreController } from './membre.controller';
+import { Membre } from 'src/output/entities/Membre';
 
 @Module({
   imports: [TypeOrmModule.forFeature([Membre])],
@@ -10,4 +10,4 @@ import { MembreController } from './membre.controller';
   controllers: [MembreController],
   providers: [MembreService],
 })
-export class MembreModule {}
+export class MembreModule { }
