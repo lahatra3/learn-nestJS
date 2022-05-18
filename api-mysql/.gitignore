@@ -37,3 +37,6 @@ lerna-debug.log*
 # ORM CONFIG 
 src/ormconfig.json
 src/output/ormconfig.json
+
+# ENV
+.env
